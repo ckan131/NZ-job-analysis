@@ -23,7 +23,8 @@ tables = inspector.get_table_names()
 for table in tables:
     try:
         df = pd.read_sql_table(table, engine)
-        df.to_csv(f"{table}.csv", index=False)
-        print(f"✅ 导出成功：{table}.csv")
+        csv_path = os.path.join(os.path.dirname(__file__), f"{table}.csv")
+        df.to_csv(csv_path, index=False)
+        print(f"✅ 导出成功：{csv_path}")
     except Exception as e:
         print(f"❌ 跳过表 {table}，因错误：{e}")
