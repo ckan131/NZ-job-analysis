@@ -3,7 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine, inspect
 from dotenv import load_dotenv
 import pymysql
-
+import datetime
 
 load_dotenv()
 host = os.getenv("DB_HOST")
@@ -19,7 +19,7 @@ engine = create_engine(f'mysql+pymysql://{username}:{password}@{host}:{port}/{da
 inspector = inspect(engine)
 tables = inspector.get_table_names()  
 
-
+# 1. 全量加载
 for table in tables:
     try:
         df = pd.read_sql_table(table, engine)
