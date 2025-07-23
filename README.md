@@ -16,9 +16,9 @@ This project analyzes IT job market trends in New Zealand using data from local 
 
 | Step | Description | GitHub Folder |
 |------|-------------|----------------|
-| ✅ **Step 1: Connect to DB & Design ETL Strategy** | - Connect to MySQL database<br>- Export historical data as CSV<br>- Design full+incremental load strategy | [`step1_connect db and ETL strategy`](./tree/main/step1_connect%20db%20and%20ETL%20strategy) |
-| ✅ **Step 2: Data Cleaning & Preprocessing** | - Handle missing values and standardize formats<br>- Extract skills from descriptions (`skills_extracted`)<br>- Normalize skill names | [`step2_data cleaning and preprocessing`](./tree/main/step2_data%20cleaning%20and%20preprocessing) |
-| ✅ **Step 3: Construct Star Schema Tables** | - Build `fact_jobs` and all dimension tables (dim_xxx)<br>- Create many-to-many bridge table `fact_job_skills`<br>- Export final schema as CSV for Power BI | [`step3_construct schema tables`](./tree/main/step3_construct%20schema%20tables) |
+| ✅ **Step 1: Connect to DB & Design ETL Strategy** | - Connect to MySQL database<br>- Export historical data as CSV<br>- Design full+incremental load strategy | [`step1_connect db and ETL strategy`](./step1_connect%20db%20and%20ETL%20strategy) |
+| ✅ **Step 2: Data Cleaning & Preprocessing** | - Handle missing values and standardize formats<br>- Extract skills from descriptions (`skills_extracted`)<br>- Normalize skill names | [`step2_data cleaning and preprocessing`](./step2_data%20cleaning%20and%20preprocessing) |
+| ✅ **Step 3: Construct Star Schema Tables** | - Build `fact_jobs` and all dimension tables (dim_xxx)<br>- Create many-to-many bridge table `fact_job_skills`<br>- Export final schema as CSV for Power BI | [`step3_construct schema tables`](./step3_construct%20schema%20tables) |
 
 ---
 
@@ -76,9 +76,9 @@ Below is a filtered view of the dashboard showing **only active job listings in 
 
 | 步骤 | 内容 | GitHub 文件夹 |
 |------|------|----------------|
-| ✅ **Step 1: 数据库连接与 ETL 策略设计** | - 连接 MySQL 数据库<br>- 导出历史数据为 CSV<br>- 设计“历史全量 + 每日增量”加载策略 | [`step1_connect db and ETL strategy`](./tree/main/step1_connect%20db%20and%20ETL%20strategy) |
-| ✅ **Step 2: 数据清洗与预处理** | - 清洗缺失值并规范数据格式<br>- 提取 `skills_extracted` 技能列<br>- 标准化技能名称格式 | [`step2_data cleaning and preprocessing`](./tree/main/step2_data%20cleaning%20and%20preprocessing) |
-| ✅ **Step 3: 构建 Star Schema 模型表** | - 构建 fact_jobs 与各维度表（dim_xxx）<br>- 构建多对多桥接表 `fact_job_skills`<br>- 导出所有表为 CSV 供 Power BI 使用 | [`step3_construct schema tables`](./tree/main/step3_construct%20schema%20tables) |
+| ✅ **Step 1: 数据库连接与 ETL 策略设计** | - 连接 MySQL 数据库<br>- 导出历史数据为 CSV<br>- 设计“历史全量 + 每日增量”加载策略 | [`step1_connect db and ETL strategy`](./step1_connect%20db%20and%20ETL%20strategy) |
+| ✅ **Step 2: 数据清洗与预处理** | - 清洗缺失值并规范数据格式<br>- 提取 `skills_extracted` 技能列<br>- 标准化技能名称格式 | [`step2_data cleaning and preprocessing`](./step2_data%20cleaning%20and%20preprocessing) |
+| ✅ **Step 3: 构建 Star Schema 模型表** | - 构建 fact_jobs 与各维度表（dim_xxx）<br>- 构建多对多桥接表 `fact_job_skills`<br>- 导出所有表为 CSV 供 Power BI 使用 | [`step3_construct schema tables`](./step3_construct%20schema%20tables) |
 
 ---
 
@@ -115,5 +115,3 @@ Below is a filtered view of the dashboard showing **only active job listings in 
 - MySQL 数据导出
 - Power BI 构建交互式仪表板（词云、卡片、地图等）
 - GitHub 管理项目版本
-
----
